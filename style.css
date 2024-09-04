@@ -1,0 +1,192 @@
+:root {
+	font-family: "Moderustic", sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100dvh;
+}
+
+header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #FFDDFC;
+}
+
+.nav-container {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav-text{
+	color: #00859a;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	
+	
+}
+.nav-logo {
+	display: flex;
+	flex-direction: row;
+	color: #00859a;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	align-items: center;
+	gap: 20px;
+}
+
+.nav-logo img {
+	width: 150px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+
+
+.category h1 {
+	font-size: 20px;
+	color: #95afdd;
+
+}
+
+.category p {
+	font-size: 15px;
+	color: #000000;
+
+}
+
+.category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.category h2 {
+	font-size: 60px;
+	color: #95afdd;
+
+}
+
+section{
+	margin-top: 80px;
+}
+
+.category .productos-lista {
+	width: 100%;
+	/* display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	padding: 0%;
+	margin: 0;
+}
+
+.category .productos-lista .producto {
+	width: 250px;
+
+}
+
+.category .productos-lista .producto img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.nosotras{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: center;
+}
+.nosotras h2{
+	color: #00859a;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.formulario{
+	background-color: #fdd6db69;
+	padding: 10px;
+}
+.formulario h2{
+	color: #00859a;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+margin-bottom: 30px;
+}
+
+.formulario button{
+	background-color: #f8c9cf;
+	color: #000000;
+	border: #f8c9cf;
+}
+
+.formulario button:hover{
+	background-color: #f8c9cf;
+}
+img{
+	border-radius: 15px;
+}
+footer{
+	background-color: #EAE7E0;
+	height: 150px;
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 50px;
+
+}
+
+
+
+
+@media (max-width: 599px) {
+	.nav-img{
+		width: 60px;
+	}
+	.nav-text{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1023px){
+	.category h2{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 833px){
+	.category .productos-lista{
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+	.category .productos-lista .producto img{
+		width: 150px;
+		height: 150px;
+	}
+	.category .productos-lista .producto {
+		width: 150px;
+	
+	}
+}
+
+
+/* #ffddfc #cfc4ef #95afdd #529ac1 #00859a #006d6a #FCDBDE*/
